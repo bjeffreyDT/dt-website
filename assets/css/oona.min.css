@@ -1,0 +1,1710 @@
+@charset "UTF-8";
+
+html {
+    font-family: Roboto Mono, monospace
+}
+
+body {
+    -webkit-transition: background .4s ease;
+    transition: background .4s ease
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    -moz-font-feature-settings: 'liga', 'kern'
+}
+
+.value-item {
+    -webkit-transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+    -moz-transition: 
+        color 0.2s ease,
+        transform 0.2s ease;
+    -o-transition: 
+        color 0.2s ease,
+        transform 0.2s ease;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.value-item:hover {
+    color: #FFCA3A !important;
+    transform: scale(1.1);
+    cursor: default;
+  }
+
+.highlight {
+    color:#FF595E !important;
+  }
+
+.no-underline {
+    border-bottom: 0 !important
+}
+
+section {
+    padding: 5rem 0
+}
+
+section:not(:first-of-type) {
+    border-top: 2px solid rgba(55, 71, 79, .075)
+}
+
+.container {
+    width: 90%;
+    max-width: 1600px
+}
+
+.container.full-width {
+    width: 100%
+}
+
+.container.row.narrow-row {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.pace .pace-progress-inner {
+    box-shadow: none
+}
+
+iframe {
+    border: 0
+}
+
+.p-margin-adjust {
+    margin-top: -1em
+}
+
+.social .row {
+    margin-bottom: 0
+}
+
+.navbar-fixed nav {
+    background-color: transparent;
+    box-shadow: none
+}
+
+.navbar-fixed nav .sidenav-toggle,
+.navbar-fixed nav a,
+.navbar-fixed nav ul:not(.side-nav) a,
+.page-404 .navbar-fixed nav a,
+.page-404 .navbar-fixed nav ul:not(.side-nav) a,
+.page-values .navbar-fixed nav a,
+.page-values .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-looking-for-a-new-office .navbar-fixed nav a,
+.page-blog-looking-for-a-new-office .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-monster-beats .navbar-fixed nav a,
+.page-blog-monster-beats .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-new-bike .navbar-fixed nav a,
+.page-blog-new-bike .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-the-mountain .navbar-fixed nav a,
+.page-blog-the-mountain .navbar-fixed nav ul:not(.side-nav) a,
+.page-contact .navbar-fixed nav a,
+.page-contact .navbar-fixed nav ul:not(.side-nav) a,
+.page-home .navbar-fixed nav a,
+.page-home .navbar-fixed nav ul:not(.side-nav) a,
+.page-journal .navbar-fixed nav a,
+.page-journal .navbar-fixed nav ul:not(.side-nav) a,
+.page-openings .navbar-fixed nav a,
+.page-openings .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-ice-cream-concept .navbar-fixed nav a,
+.page-work-ice-cream-concept .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-ice-cream .navbar-fixed nav a,
+.page-work-ice-cream .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-the-clocks .navbar-fixed nav a,
+.page-work-the-clocks .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-the-lamp .navbar-fixed nav a,
+.page-work-the-lamp .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-wooden-series-1 .navbar-fixed nav a,
+.page-work-wooden-series-1 .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-wooden-series-2 .navbar-fixed nav a,
+.page-work-wooden-series-2 .navbar-fixed nav ul:not(.side-nav) a,
+.page-work .navbar-fixed nav a,
+.page-work .navbar-fixed nav ul:not(.side-nav) a {
+    color: #37474f;
+    border-bottom: 1px solid rgba(55, 71, 79, .25)
+}
+
+.navbar-fixed nav .sidenav-toggle:hover,
+.navbar-fixed nav a:hover,
+.navbar-fixed nav ul:not(.side-nav) a:hover {
+    border-bottom-color: rgba(55, 71, 79, .5)
+}
+
+.navbar-fixed nav .sidenav-toggle,
+.navbar-fixed nav a {
+    display: inline
+}
+
+.navbar-fixed nav ul:not(.side-nav) {
+    -webkit-transition: all .4s cubic-bezier(.075, .82, .165, 1) .5s;
+    transition: all .4s cubic-bezier(.075, .82, .165, 1) .5s
+}
+
+.navbar-fixed nav ul:not(.side-nav).hidden {
+    -webkit-transform: translateY(-5rem);
+    transform: translateY(-5rem)
+}
+
+.navbar-fixed nav ul:not(.side-nav) a {
+    display: inline;
+    padding: 0
+}
+
+.navbar-fixed nav ul:not(.side-nav) a:hover {
+    background: transparent
+}
+
+.navbar-fixed nav ul:not(.side-nav) li:not(:first-of-type) {
+    margin-left: 2rem
+}
+
+.navbar-fixed nav .side-nav a {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #eceff1 !important;
+    color: #37474f !important
+}
+
+.navbar-fixed nav .current-page:before {
+    position: absolute;
+    margin-top: -1rem;
+    content: '•'
+}
+
+address {
+    font-style: normal
+}
+
+footer {
+    padding: 2rem 0 4rem
+}
+
+footer .new-window {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: inline-block
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+.hero canvas {
+    display: block
+}
+
+.toast {
+    display: none;
+    height: auto;
+    padding: 20px;
+    line-height: 1.75rem
+}
+
+.toast:first-of-type,
+.toast a {
+    display: block
+}
+
+.toast a {
+    color: #fff;
+    text-decoration: underline
+}
+
+.toast.error {
+    background-color: #ff5252
+}
+
+.toast.success {
+    color: #000;
+    background-color: #00e676
+}
+
+.slider .indicators .indicator-item {
+    background-color: hsla(0, 0%, 100%, .5)
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #fff
+}
+
+.page-404 {
+    color: #fff;
+    background: #000
+}
+
+.navbar-fixed nav .page-404 .sidenav-toggle,
+.navbar-fixed nav .page-404 a,
+.navbar-fixed nav ul:not(.side-nav) .page-404 a,
+.page-404 .navbar-fixed nav .sidenav-toggle,
+.page-404 .navbar-fixed nav a,
+.page-404 .navbar-fixed nav ul:not(.side-nav) a,
+.page-404 a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-404 .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-404 a:hover,
+.page-404 .navbar-fixed nav .sidenav-toggle:hover,
+.page-404 .navbar-fixed nav a:hover,
+.page-404 .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-404 a:hover,
+.page-values .navbar-fixed nav .page-404 a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-404 a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-404 a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-404 a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-404 a:hover,
+.page-contact .navbar-fixed nav .page-404 a:hover,
+.page-home .navbar-fixed nav .page-404 a:hover,
+.page-journal .navbar-fixed nav .page-404 a:hover,
+.page-openings .navbar-fixed nav .page-404 a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-404 a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-404 a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-404 a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-404 a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-404 a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-404 a:hover,
+.page-work .navbar-fixed nav .page-404 a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-404 .pace-progress {
+    background: #fff
+}
+
+.page-404 .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-404 footer {
+    display: none
+}
+
+.page-404 .intro {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: none
+}
+
+.page-404 #space {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #141414
+}
+
+.page-404 #space.started {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: none
+}
+
+.page-404 #space.started #start {
+    display: none
+}
+
+.page-404 #space.started #spaceship {
+    display: block
+}
+
+.page-404 #space.hit {
+    background: #341414;
+    box-shadow: inset 0 0 50px rgba(255, 0, 0, .6)
+}
+
+.page-404 h1 {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    margin: 0;
+    font-size: 48px;
+    line-height: 1;
+    color: #00e676
+}
+
+.page-404 h1#livesCount {
+    right: 2%;
+    left: auto;
+    color: #ff1744
+}
+
+.page-404 #start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    margin-top: -60px;
+    margin-left: -25%;
+    font-size: 60px;
+    line-height: 120px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: #ff1744
+}
+
+.page-404 #start:hover {
+    background: #d50000
+}
+
+.page-404 #spaceship {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 1;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-right: 10px solid #c00
+}
+
+.page-404 #spaceship:after,
+.page-404 #spaceship:before {
+    left: 0
+}
+
+.page-404 #spaceship:before {
+    top: -25px;
+    border-bottom: 25px solid #c00;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent
+}
+
+.page-404 #spaceship:after {
+    top: -20px;
+    border-bottom: 20px solid red;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent
+}
+
+.page-404 #spaceship .wing {
+    position: relative;
+    top: 40px;
+    left: -10px;
+    float: left;
+    width: 10px;
+    height: 20px;
+    background: red
+}
+
+.page-404 #spaceship .wing+.wing {
+    left: 20px;
+    float: right;
+    background: #c00
+}
+
+.page-404 #spaceship .flames {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.page-404 #spaceship .flames:after,
+.page-404 #spaceship .flames:before {
+    border-top: 25px solid rgba(255, 135, 40, .7);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent
+}
+
+.page-404 #spaceship .flames:before {
+    left: 10px
+}
+
+.page-404 #spaceship .flames:after {
+    left: 20px
+}
+
+.page-404 #spaceship .flames.burn:after,
+.page-404 #spaceship .flames.burn:before {
+    border-top: 28px solid rgba(255, 100, 0, .7)
+}
+
+.page-404 .lazer {
+    -webkit-transition: bottom .666s linear;
+    transition: bottom .666s linear;
+    position: absolute;
+    bottom: 51px;
+    width: 8px;
+    height: 8px;
+    background: #76ff03
+}
+
+.page-404 .lazer.shot {
+    bottom: 100%
+}
+
+.page-404 .enemy {
+    -webkit-transition: top 4s linear;
+    transition: top 4s linear;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: #ffeb3b
+}
+
+.page-404 .enemy.moving {
+    top: 100%
+}
+
+.page-404 .enemy.exploding {
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    background: red;
+    width: 60px;
+    height: 60px;
+    margin-left: -5px;
+    margin-top: -5px
+}
+
+.page-404 .star {
+    -webkit-transition: -webkit-transform 2s linear;
+    transition: transform 2s linear;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background: hsla(0, 0%, 100%, .3)
+}
+
+.page-404 .star.fast {
+    -webkit-transition: -webkit-transform 2.5s linear;
+    transition: transform 2.5s linear
+}
+
+.page-404 .star.shooting {
+    -webkit-transform: translate3d(0, 1200px, 0);
+    transform: translate3d(0, 1200px, 0)
+}
+
+.page-404 #spaceship .flames:after,
+.page-404 #spaceship .flames:before,
+.page-404 #spaceship:after,
+.page-404 #spaceship:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: ''
+}
+
+.page-home {
+    color: #37474f;
+    background: #eceff1
+}
+
+.navbar-fixed nav .page-home .sidenav-toggle,
+.navbar-fixed nav .page-home a,
+.navbar-fixed nav ul:not(.side-nav) .page-home a,
+.page-home .navbar-fixed nav .sidenav-toggle,
+.page-home .navbar-fixed nav a,
+.page-home .navbar-fixed nav ul:not(.side-nav) a,
+.page-home a {
+    color: #37474f;
+    border-bottom: 1px solid rgba(55, 71, 79, .25)
+}
+
+.navbar-fixed nav .page-home .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-home a:hover,
+.page-404 .navbar-fixed nav .page-home a:hover,
+.page-values .navbar-fixed nav .page-home a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-home a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-home a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-home a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-home a:hover,
+.page-contact .navbar-fixed nav .page-home a:hover,
+.page-home .navbar-fixed nav .sidenav-toggle:hover,
+.page-home .navbar-fixed nav a:hover,
+.page-home .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-home a:hover,
+.page-journal .navbar-fixed nav .page-home a:hover,
+.page-openings .navbar-fixed nav .page-home a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-home a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-home a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-home a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-home a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-home a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-home a:hover,
+.page-work .navbar-fixed nav .page-home a:hover {
+    border-bottom-color: rgba(55, 71, 79, .5)
+}
+
+.page-home .pace-progress {
+    background: #37474f
+}
+
+.page-home .pace-activity {
+    border-top-color: #37474f;
+    border-left-color: #37474f
+}
+
+.page-home .intro {
+    height: 100vh
+}
+
+.page-home .services i {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 5rem
+}
+
+.page-home .services .row:not(:first-of-type) {
+    margin-bottom: 5rem
+}
+
+.page-home .no-underline:hover~a {
+    border-bottom-color: rgba(66, 66, 66, .5)
+}
+
+.page-work {
+    color: #424242;
+    background: #fafafa
+}
+
+.navbar-fixed nav .page-work .sidenav-toggle,
+.navbar-fixed nav .page-work a,
+.navbar-fixed nav ul:not(.side-nav) .page-work a,
+.page-work .navbar-fixed nav .sidenav-toggle,
+.page-work .navbar-fixed nav a,
+.page-work .navbar-fixed nav ul:not(.side-nav) a,
+.page-work a {
+    color: #424242;
+    border-bottom: 1px solid rgba(66, 66, 66, .25)
+}
+
+.navbar-fixed nav .page-work .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work a:hover,
+.page-404 .navbar-fixed nav .page-work a:hover,
+.page-values .navbar-fixed nav .page-work a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work a:hover,
+.page-contact .navbar-fixed nav .page-work a:hover,
+.page-home .navbar-fixed nav .page-work a:hover,
+.page-journal .navbar-fixed nav .page-work a:hover,
+.page-openings .navbar-fixed nav .page-work a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-work a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-work a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-work a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-work a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-work a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-work a:hover,
+.page-work .navbar-fixed nav .sidenav-toggle:hover,
+.page-work .navbar-fixed nav a:hover,
+.page-work .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work a:hover {
+    border-bottom-color: rgba(66, 66, 66, .5)
+}
+
+.page-work .pace-progress {
+    background: #424242
+}
+
+.page-work .pace-activity {
+    border-top-color: #424242;
+    border-left-color: #424242
+}
+
+.page-work .no-underline:hover+a {
+    border-bottom-color: rgba(66, 66, 66, .5)
+}
+
+[class*=page-work-] .hero,
+[class*=page-work-] .hero-wrapper {
+    height: 75vh
+}
+
+[class*=page-work-] .hero {
+    position: fixed;
+    width: 100%;
+    margin-top: 64px;
+    background-position: 50%;
+    background-size: cover
+}
+
+[class*=page-work-] .margin-1em {
+    margin-top: 1em
+}
+
+[class*=page-work-] section:not(:first-of-type) {
+    border-top-color: hsla(0, 0%, 100%, .2)
+}
+
+[class*=page-work-] section:first-of-type {
+    padding-top: 0
+}
+
+.page-work-ice-cream {
+    color: #fff;
+    background: #2dc3e9
+}
+
+.navbar-fixed nav .page-work-ice-cream .sidenav-toggle,
+.navbar-fixed nav .page-work-ice-cream a,
+.navbar-fixed nav ul:not(.side-nav) .page-work-ice-cream a,
+.page-work-ice-cream .navbar-fixed nav .sidenav-toggle,
+.page-work-ice-cream .navbar-fixed nav a,
+.page-work-ice-cream .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-ice-cream a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-work-ice-cream .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work-ice-cream a:hover,
+.page-404 .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-values .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-contact .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-home .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-journal .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-openings .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-work-ice-cream .navbar-fixed nav .sidenav-toggle:hover,
+.page-work-ice-cream .navbar-fixed nav a:hover,
+.page-work-ice-cream .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work-ice-cream a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-work-ice-cream a:hover,
+.page-work .navbar-fixed nav .page-work-ice-cream a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-work-ice-cream .pace-progress {
+    background: #fff
+}
+
+.page-work-ice-cream .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-work-ice-cream .content-wrapper,
+.page-work-ice-cream footer {
+    background: #2dc3e9
+}
+
+.page-work-the-lamp {
+    color: #fff;
+    background: #25e47a
+}
+
+.navbar-fixed nav .page-work-the-lamp .sidenav-toggle,
+.navbar-fixed nav .page-work-the-lamp a,
+.navbar-fixed nav ul:not(.side-nav) .page-work-the-lamp a,
+.page-work-the-lamp .navbar-fixed nav .sidenav-toggle,
+.page-work-the-lamp .navbar-fixed nav a,
+.page-work-the-lamp .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-the-lamp a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-work-the-lamp .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work-the-lamp a:hover,
+.page-404 .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-values .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-contact .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-home .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-journal .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-openings .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-work-the-lamp .navbar-fixed nav .sidenav-toggle:hover,
+.page-work-the-lamp .navbar-fixed nav a:hover,
+.page-work-the-lamp .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work-the-lamp a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-work-the-lamp a:hover,
+.page-work .navbar-fixed nav .page-work-the-lamp a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-work-the-lamp .pace-progress {
+    background: #fff
+}
+
+.page-work-the-lamp .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-work-the-lamp .content-wrapper,
+.page-work-the-lamp footer {
+    background: #25e47a
+}
+
+.page-work-the-clocks {
+    color: #fff;
+    background: #a0f
+}
+
+.navbar-fixed nav .page-work-the-clocks .sidenav-toggle,
+.navbar-fixed nav .page-work-the-clocks a,
+.navbar-fixed nav ul:not(.side-nav) .page-work-the-clocks a,
+.page-work-the-clocks .navbar-fixed nav .sidenav-toggle,
+.page-work-the-clocks .navbar-fixed nav a,
+.page-work-the-clocks .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-the-clocks a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-work-the-clocks .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work-the-clocks a:hover,
+.page-404 .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-values .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-contact .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-home .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-journal .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-openings .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-work-the-clocks .navbar-fixed nav .sidenav-toggle:hover,
+.page-work-the-clocks .navbar-fixed nav a:hover,
+.page-work-the-clocks .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work-the-clocks a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-work-the-clocks a:hover,
+.page-work .navbar-fixed nav .page-work-the-clocks a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-work-the-clocks .pace-progress {
+    background: #fff
+}
+
+.page-work-the-clocks .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-work-the-clocks .content-wrapper,
+.page-work-the-clocks footer {
+    background: #a0f
+}
+
+.page-work-wooden-series-2 {
+    color: #fff;
+    background: #db3838
+}
+
+.navbar-fixed nav .page-work-wooden-series-2 .sidenav-toggle,
+.navbar-fixed nav .page-work-wooden-series-2 a,
+.navbar-fixed nav ul:not(.side-nav) .page-work-wooden-series-2 a,
+.page-work-wooden-series-2 .navbar-fixed nav .sidenav-toggle,
+.page-work-wooden-series-2 .navbar-fixed nav a,
+.page-work-wooden-series-2 .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-wooden-series-2 a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-work-wooden-series-2 .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work-wooden-series-2 a:hover,
+.page-404 .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-values .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-contact .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-home .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-journal .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-openings .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-work-wooden-series-2 a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .sidenav-toggle:hover,
+.page-work-wooden-series-2 .navbar-fixed nav a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work-wooden-series-2 a:hover,
+.page-work .navbar-fixed nav .page-work-wooden-series-2 a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-work-wooden-series-2 .pace-progress {
+    background: #fff
+}
+
+.page-work-wooden-series-2 .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-work-wooden-series-2 .content-wrapper,
+.page-work-wooden-series-2 footer {
+    background: #db3838
+}
+
+.page-work-wooden-series-1 {
+    color: #212121;
+    background: #fee94e
+}
+
+.navbar-fixed nav .page-work-wooden-series-1 .sidenav-toggle,
+.navbar-fixed nav .page-work-wooden-series-1 a,
+.navbar-fixed nav ul:not(.side-nav) .page-work-wooden-series-1 a,
+.page-work-wooden-series-1 .navbar-fixed nav .sidenav-toggle,
+.page-work-wooden-series-1 .navbar-fixed nav a,
+.page-work-wooden-series-1 .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-wooden-series-1 a {
+    color: #212121;
+    border-bottom: 1px solid rgba(33, 33, 33, .25)
+}
+
+.navbar-fixed nav .page-work-wooden-series-1 .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work-wooden-series-1 a:hover,
+.page-404 .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-values .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-contact .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-home .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-journal .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-openings .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .sidenav-toggle:hover,
+.page-work-wooden-series-1 .navbar-fixed nav a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work-wooden-series-1 a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-work-wooden-series-1 a:hover,
+.page-work .navbar-fixed nav .page-work-wooden-series-1 a:hover {
+    border-bottom-color: rgba(33, 33, 33, .5)
+}
+
+.page-work-wooden-series-1 .pace-progress {
+    background: #212121
+}
+
+.page-work-wooden-series-1 .pace-activity {
+    border-top-color: #212121;
+    border-left-color: #212121
+}
+
+.page-work-wooden-series-1 .content-wrapper,
+.page-work-wooden-series-1 footer {
+    background: #fee94e
+}
+
+.page-work-wooden-series-1 section:not(:first-of-type) {
+    border-top-color: rgba(33, 33, 33, .2)
+}
+
+.page-work-ice-cream-concept {
+    color: #212121;
+    background: #e8e8e8
+}
+
+.navbar-fixed nav .page-work-ice-cream-concept .sidenav-toggle,
+.navbar-fixed nav .page-work-ice-cream-concept a,
+.navbar-fixed nav ul:not(.side-nav) .page-work-ice-cream-concept a,
+.page-work-ice-cream-concept .navbar-fixed nav .sidenav-toggle,
+.page-work-ice-cream-concept .navbar-fixed nav a,
+.page-work-ice-cream-concept .navbar-fixed nav ul:not(.side-nav) a,
+.page-work-ice-cream-concept a {
+    color: #212121;
+    border-bottom: 1px solid rgba(33, 33, 33, .25)
+}
+
+.navbar-fixed nav .page-work-ice-cream-concept .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-work-ice-cream-concept a:hover,
+.page-404 .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-values .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-contact .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-home .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-journal .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-openings .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .sidenav-toggle:hover,
+.page-work-ice-cream-concept .navbar-fixed nav a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-work-ice-cream-concept a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-work-ice-cream-concept a:hover,
+.page-work .navbar-fixed nav .page-work-ice-cream-concept a:hover {
+    border-bottom-color: rgba(33, 33, 33, .5)
+}
+
+.page-work-ice-cream-concept .pace-progress {
+    background: #212121
+}
+
+.page-work-ice-cream-concept .pace-activity {
+    border-top-color: #212121;
+    border-left-color: #212121
+}
+
+.page-work-ice-cream-concept .content-wrapper,
+.page-work-ice-cream-concept footer {
+    background: #e8e8e8
+}
+
+.page-work-ice-cream-concept section:not(:first-of-type) {
+    border-top-color: rgba(33, 33, 33, .2)
+}
+
+.page-openings {
+    color: #fff;
+    background: #174CA1
+}
+
+.navbar-fixed nav .page-openings .sidenav-toggle,
+.navbar-fixed nav .page-openings a,
+.navbar-fixed nav ul:not(.side-nav) .page-openings a,
+.page-openings .navbar-fixed nav .sidenav-toggle,
+.page-openings .navbar-fixed nav a,
+.page-openings .navbar-fixed nav ul:not(.side-nav) a,
+.page-openings a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-openings .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-openings a:hover,
+.page-404 .navbar-fixed nav .page-openings a:hover,
+.page-values .navbar-fixed nav .page-openings a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-openings a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-openings a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-openings a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-openings a:hover,
+.page-contact .navbar-fixed nav .page-openings a:hover,
+.page-home .navbar-fixed nav .page-openings a:hover,
+.page-journal .navbar-fixed nav .page-openings a:hover,
+.page-openings .navbar-fixed nav .sidenav-toggle:hover,
+.page-openings .navbar-fixed nav a:hover,
+.page-openings .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-openings a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-openings a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-openings a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-openings a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-openings a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-openings a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-openings a:hover,
+.page-work .navbar-fixed nav .page-openings a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-openings .pace-progress {
+    background: #fff
+}
+
+.page-openings .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-openings .info {
+    position: absolute;
+    display: inline-block;
+    padding: 0 1rem;
+    cursor: help;
+    opacity: .5
+}
+
+.page-openings .info:hover {
+    opacity: 1
+}
+
+.page-openings .collapsible {
+    box-shadow: none
+}
+
+.page-openings .collapsible-header {
+    background: transparent
+}
+
+.page-openings section:not(:first-of-type) {
+    border-top-color: hsla(0, 0%, 100%, .2)
+}
+
+.page-values {
+    color: #174CA1;
+    background: #C09BD8
+}
+
+.navbar-fixed nav .page-values .sidenav-toggle,
+.navbar-fixed nav .page-values a,
+.navbar-fixed nav ul:not(.side-nav) .page-values a,
+.page-values .navbar-fixed nav .sidenav-toggle,
+.page-values .navbar-fixed nav a,
+.page-values .navbar-fixed nav ul:not(.side-nav) a,
+.page-values a {
+    color: #174CA1;
+    border-bottom: 1px solid rgba(26, 35, 126, .25)
+}
+
+.navbar-fixed nav .page-values .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-values a:hover,
+.page-404 .navbar-fixed nav .page-values a:hover,
+.page-values .navbar-fixed nav .sidenav-toggle:hover,
+.page-values .navbar-fixed nav a:hover,
+.page-values .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-values a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-values a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-values a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-values a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-values a:hover,
+.page-contact .navbar-fixed nav .page-values a:hover,
+.page-home .navbar-fixed nav .page-values a:hover,
+.page-journal .navbar-fixed nav .page-values a:hover,
+.page-openings .navbar-fixed nav .page-values a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-values a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-values a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-values a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-values a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-values a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-values a:hover,
+.page-work .navbar-fixed nav .page-values a:hover {
+    border-bottom-color: rgba(26, 35, 126, .5)
+}
+
+.page-values .pace-progress {
+    background: #174CA1
+}
+
+.page-values .pace-activity {
+    border-top-color: #174CA1;
+    border-left-color: #174CA1
+}
+
+.page-values .social {
+    margin-top: 0
+}
+
+.page-values .philosophy {
+    padding: 5rem 0 4rem
+}
+
+.page-values .philosophy .tabs {
+    height: auto;
+    background-color: transparent
+}
+
+.page-values .philosophy .tabs .tab {
+    height: auto;
+    letter-spacing: normal;
+    color: #174CA1;
+    text-transform: none
+}
+
+.page-values .philosophy .tabs .tab a {
+    color: rgba(26, 35, 126, .6)
+}
+
+.page-values .philosophy .tabs .tab a.active {
+    color: #174CA1
+}
+
+.page-values .philosophy .tab-contents h5 {
+    display: none
+}
+
+.page-values .philosophy .indicator {
+    height: 3px;
+    background-color: #174CA1
+}
+
+.page-journal {
+    color: #3e2723;
+    background: #fffde7
+}
+
+.navbar-fixed nav .page-journal .sidenav-toggle,
+.navbar-fixed nav .page-journal a,
+.navbar-fixed nav ul:not(.side-nav) .page-journal a,
+.page-journal .navbar-fixed nav .sidenav-toggle,
+.page-journal .navbar-fixed nav a,
+.page-journal .navbar-fixed nav ul:not(.side-nav) a,
+.page-journal a {
+    color: #3e2723;
+    border-bottom: 1px solid rgba(62, 39, 35, .25)
+}
+
+.navbar-fixed nav .page-journal .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-journal a:hover,
+.page-404 .navbar-fixed nav .page-journal a:hover,
+.page-values .navbar-fixed nav .page-journal a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-journal a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-journal a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-journal a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-journal a:hover,
+.page-contact .navbar-fixed nav .page-journal a:hover,
+.page-home .navbar-fixed nav .page-journal a:hover,
+.page-journal .navbar-fixed nav .sidenav-toggle:hover,
+.page-journal .navbar-fixed nav a:hover,
+.page-journal .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-journal a:hover,
+.page-openings .navbar-fixed nav .page-journal a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-journal a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-journal a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-journal a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-journal a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-journal a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-journal a:hover,
+.page-work .navbar-fixed nav .page-journal a:hover {
+    border-bottom-color: rgba(62, 39, 35, .5)
+}
+
+.page-journal .pace-progress {
+    background: #3e2723
+}
+
+.page-journal .pace-activity {
+    border-top-color: #3e2723;
+    border-left-color: #3e2723
+}
+
+.page-journal .no-underline:hover~a {
+    border-bottom-color: rgba(66, 66, 66, .5)
+}
+
+[class*=page-blog-] .hero,
+[class*=page-blog-] .hero-wrapper {
+    height: 75vh
+}
+
+[class*=page-blog-] .hero {
+    position: fixed;
+    width: 100%;
+    margin-top: 64px;
+    background-position: 50%;
+    background-size: cover
+}
+
+[class*=page-blog-] .margin-1em {
+    margin-top: 1em
+}
+
+[class*=page-blog-] section:not(:first-of-type) {
+    border-top-color: hsla(0, 0%, 100%, .2)
+}
+
+[class*=page-blog-] section:first-of-type {
+    padding-top: 0
+}
+
+.page-blog-new-bike {
+    color: #fff;
+    background: #7b9a9c
+}
+
+.navbar-fixed nav .page-blog-new-bike .sidenav-toggle,
+.navbar-fixed nav .page-blog-new-bike a,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-new-bike a,
+.page-blog-new-bike .navbar-fixed nav .sidenav-toggle,
+.page-blog-new-bike .navbar-fixed nav a,
+.page-blog-new-bike .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-new-bike a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-blog-new-bike .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-new-bike a:hover,
+.page-404 .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-values .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-blog-new-bike .navbar-fixed nav .sidenav-toggle:hover,
+.page-blog-new-bike .navbar-fixed nav a:hover,
+.page-blog-new-bike .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-blog-new-bike a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-contact .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-home .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-journal .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-openings .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-blog-new-bike a:hover,
+.page-work .navbar-fixed nav .page-blog-new-bike a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-blog-new-bike .pace-progress {
+    background: #fff
+}
+
+.page-blog-new-bike .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-blog-new-bike .content-wrapper,
+.page-blog-new-bike footer {
+    background: #7b9a9c
+}
+
+.page-blog-the-mountain {
+    color: #fff;
+    background: #335b87
+}
+
+.navbar-fixed nav .page-blog-the-mountain .sidenav-toggle,
+.navbar-fixed nav .page-blog-the-mountain a,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-the-mountain a,
+.page-blog-the-mountain .navbar-fixed nav .sidenav-toggle,
+.page-blog-the-mountain .navbar-fixed nav a,
+.page-blog-the-mountain .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-the-mountain a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-blog-the-mountain .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-the-mountain a:hover,
+.page-404 .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-values .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-blog-the-mountain .navbar-fixed nav .sidenav-toggle:hover,
+.page-blog-the-mountain .navbar-fixed nav a:hover,
+.page-blog-the-mountain .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-blog-the-mountain a:hover,
+.page-contact .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-home .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-journal .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-openings .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-blog-the-mountain a:hover,
+.page-work .navbar-fixed nav .page-blog-the-mountain a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-blog-the-mountain .pace-progress {
+    background: #fff
+}
+
+.page-blog-the-mountain .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-blog-the-mountain .content-wrapper,
+.page-blog-the-mountain footer {
+    background: #335b87
+}
+
+.page-blog-looking-for-a-new-office {
+    color: #4e342e;
+    background: #dbc88f
+}
+
+.navbar-fixed nav .page-blog-looking-for-a-new-office .sidenav-toggle,
+.navbar-fixed nav .page-blog-looking-for-a-new-office a,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-looking-for-a-new-office a,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .sidenav-toggle,
+.page-blog-looking-for-a-new-office .navbar-fixed nav a,
+.page-blog-looking-for-a-new-office .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-looking-for-a-new-office a {
+    color: #4e342e;
+    border-bottom: 1px solid rgba(78, 52, 46, .25)
+}
+
+.navbar-fixed nav .page-blog-looking-for-a-new-office .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-looking-for-a-new-office a:hover,
+.page-404 .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-values .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .sidenav-toggle:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-blog-looking-for-a-new-office a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-contact .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-home .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-journal .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-openings .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover,
+.page-work .navbar-fixed nav .page-blog-looking-for-a-new-office a:hover {
+    border-bottom-color: rgba(78, 52, 46, .5)
+}
+
+.page-blog-looking-for-a-new-office .pace-progress {
+    background: #4e342e
+}
+
+.page-blog-looking-for-a-new-office .pace-activity {
+    border-top-color: #4e342e;
+    border-left-color: #4e342e
+}
+
+.page-blog-looking-for-a-new-office .content-wrapper,
+.page-blog-looking-for-a-new-office footer {
+    background: #dbc88f
+}
+
+.page-blog-monster-beats {
+    color: #fff;
+    background: #000
+}
+
+.navbar-fixed nav .page-blog-monster-beats .sidenav-toggle,
+.navbar-fixed nav .page-blog-monster-beats a,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-monster-beats a,
+.page-blog-monster-beats .navbar-fixed nav .sidenav-toggle,
+.page-blog-monster-beats .navbar-fixed nav a,
+.page-blog-monster-beats .navbar-fixed nav ul:not(.side-nav) a,
+.page-blog-monster-beats a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-blog-monster-beats .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-blog-monster-beats a:hover,
+.page-404 .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-values .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-blog-monster-beats .navbar-fixed nav .sidenav-toggle:hover,
+.page-blog-monster-beats .navbar-fixed nav a:hover,
+.page-blog-monster-beats .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-blog-monster-beats a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-contact .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-home .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-journal .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-openings .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-blog-monster-beats a:hover,
+.page-work .navbar-fixed nav .page-blog-monster-beats a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-blog-monster-beats .pace-progress {
+    background: #fff
+}
+
+.page-blog-monster-beats .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-blog-monster-beats .content-wrapper,
+.page-blog-monster-beats footer {
+    background: #000
+}
+
+.page-contact {
+    color: #fff;
+    background: #a0f
+}
+
+.navbar-fixed nav .page-contact .sidenav-toggle,
+.navbar-fixed nav .page-contact a,
+.navbar-fixed nav ul:not(.side-nav) .page-contact a,
+.page-contact .navbar-fixed nav .sidenav-toggle,
+.page-contact .navbar-fixed nav a,
+.page-contact .navbar-fixed nav ul:not(.side-nav) a,
+.page-contact a {
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.navbar-fixed nav .page-contact .sidenav-toggle:hover,
+.navbar-fixed nav ul:not(.side-nav) .page-contact a:hover,
+.page-404 .navbar-fixed nav .page-contact a:hover,
+.page-values .navbar-fixed nav .page-contact a:hover,
+.page-blog-looking-for-a-new-office .navbar-fixed nav .page-contact a:hover,
+.page-blog-monster-beats .navbar-fixed nav .page-contact a:hover,
+.page-blog-new-bike .navbar-fixed nav .page-contact a:hover,
+.page-blog-the-mountain .navbar-fixed nav .page-contact a:hover,
+.page-contact .navbar-fixed nav .sidenav-toggle:hover,
+.page-contact .navbar-fixed nav a:hover,
+.page-contact .navbar-fixed nav ul:not(.side-nav) a:hover,
+.page-contact a:hover,
+.page-home .navbar-fixed nav .page-contact a:hover,
+.page-journal .navbar-fixed nav .page-contact a:hover,
+.page-openings .navbar-fixed nav .page-contact a:hover,
+.page-work-ice-cream-concept .navbar-fixed nav .page-contact a:hover,
+.page-work-ice-cream .navbar-fixed nav .page-contact a:hover,
+.page-work-the-clocks .navbar-fixed nav .page-contact a:hover,
+.page-work-the-lamp .navbar-fixed nav .page-contact a:hover,
+.page-work-wooden-series-1 .navbar-fixed nav .page-contact a:hover,
+.page-work-wooden-series-2 .navbar-fixed nav .page-contact a:hover,
+.page-work .navbar-fixed nav .page-contact a:hover {
+    border-bottom-color: hsla(0, 0%, 100%, .5)
+}
+
+.page-contact .pace-progress {
+    background: #fff
+}
+
+.page-contact .pace-activity {
+    border-top-color: #fff;
+    border-left-color: #fff
+}
+
+.page-contact .input-field label {
+    left: 0;
+    color: #fff
+}
+
+.page-contact input[type=email],
+.page-contact input[type=text],
+.page-contact textarea.materialize-textarea {
+    border-bottom-color: #fff
+}
+
+.page-contact .input-field input[type=email]:focus,
+.page-contact .input-field input[type=email]:focus:not([readonly]),
+.page-contact .input-field input[type=text]:focus:not([readonly]),
+.page-contact input[type=email]:focus,
+.page-contact input[type=email]:focus:not([readonly]),
+.page-contact textarea.materialize-textarea:focus,
+.page-contact textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom-color: #fff;
+    box-shadow: none
+}
+
+.page-contact .input-field input[type=email]:focus+label,
+.page-contact .input-field input[type=email]:focus:not([readonly])+label,
+.page-contact .input-field input[type=text]:focus:not([readonly])+label,
+.page-contact input[type=email]:focus+label,
+.page-contact input[type=email]:focus:not([readonly])+label,
+.page-contact textarea.materialize-textarea:focus+label,
+.page-contact textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #fff
+}
+
+.page-contact .input-field input[type=email].invalid,
+.page-contact .input-field input[type=email].valid,
+.page-contact .input-field input[type=text].invalid,
+.page-contact .input-field input[type=text].valid,
+.page-contact textarea.materialize-textarea.invalid,
+.page-contact textarea.materialize-textarea.valid {
+    border-bottom-color: #fff;
+    box-shadow: none
+}
+
+.page-contact .input-field .prefix.active {
+    color: #fff
+}
+
+@media only screen and (max-width:992px) {
+    section {
+        padding: 4rem 0
+    }
+
+    .pace .pace-activity {
+        right: 50%;
+        margin-right: -7px
+    }
+
+    .margin-on-medium-and-down {
+        margin-bottom: 2rem
+    }
+
+    footer {
+        padding-bottom: 2rem;
+        text-align: center
+    }
+
+    .page-404 #space,
+    .page-404 #start,
+    .page-404 .game-info {
+        display: none
+    }
+
+    .page-home .services i {
+        margin-bottom: .5rem
+    }
+
+    .page-home .services .row:not(:first-of-type) {
+        margin-bottom: 2rem
+    }
+
+    [class*=page-work-] .meta .row {
+        padding-bottom: 1.5rem
+    }
+
+    [class*=page-work-] .meta .col:first-of-type {
+        opacity: .75
+    }
+
+    .page-work-ice-cream .meta .row,
+    .page-work-the-clocks .meta .row,
+    .page-work-the-lamp .meta .row,
+    .page-work-wooden-series-2 .meta .row {
+        border-bottom: 1px solid #fff
+    }
+
+    .page-work-ice-cream-concept .meta .row,
+    .page-work-wooden-series-1 .meta .row {
+        border-bottom: 1px solid #212121
+    }
+
+    [class*=page-blog-] .meta .row {
+        padding-bottom: 1.5rem
+    }
+
+    [class*=page-blog-] .meta .col:first-of-type {
+        opacity: .75
+    }
+
+    .page-blog-new-bike .meta .row,
+    .page-blog-the-mountain .meta .row {
+        border-bottom: 1px solid #fff
+    }
+
+    .page-blog-looking-for-a-new-office .meta .row {
+        border-bottom: 1px solid #4e342e
+    }
+
+    .page-blog-monster-beats .meta .row {
+        border-bottom: 1px solid #fff
+    }
+}
+
+@media only screen and (max-width:600px) {
+    section {
+        padding: 3rem 0
+    }
+
+    .intro-text {
+        margin-top: 3rem
+    }
+
+    h2 {
+        font-size: 2rem
+    }
+
+    footer {
+        padding-bottom: 1rem
+    }
+
+    .page-home .services {
+        text-align: center
+    }
+
+    [class*=page-work-] .hero {
+        margin-top: 56px
+    }
+
+    .page-openings .openings {
+        text-align: center
+    }
+
+    .page-openings .price-box {
+        margin-bottom: 3rem
+    }
+
+    .page-values .team {
+        text-align: center
+    }
+
+    .page-values .philosophy {
+        padding: 2rem 0 1rem
+    }
+
+    .page-values .philosophy .tabs .tab h5 {
+        display: none
+    }
+
+    .page-values .philosophy .tab-contents h5 {
+        display: block
+    }
+
+    [class*=page-blog-] .hero {
+        margin-top: 56px
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .container {
+        width: 80%
+    }
+}
+
+@media only screen and (min-width:993px) {
+    .container {
+        width: 80%
+    }
+
+    .page-values .philosophy .tabs .tab .philosophy-number {
+        display: none
+    }
+}
+
+@media only screen and (max-width:992px) and (min-width:601px) {
+    #toast-container {
+        right: 5%
+    }
+}

@@ -1,0 +1,35 @@
+.page-home {
+    @include page-colors(color('blue-grey', 'darken-3'), color('blue-grey', 'lighten-5'));
+
+    .intro {
+        height: 100vh;
+    }
+
+    .services {
+        i {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 5rem;
+
+            @media #{$medium-and-down} {
+                margin-bottom: .5rem;
+            }
+        }
+
+        .row:not(:first-of-type) {
+            margin-bottom: 5rem;
+
+            @media #{$medium-and-down} {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media #{$small-and-down} {
+            text-align: center;
+        }
+    }
+
+    .no-underline:hover ~ a {
+        border-bottom-color: transparentize(color('grey', 'darken-3'), .5);
+    }
+}

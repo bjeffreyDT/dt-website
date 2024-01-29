@@ -1,0 +1,7 @@
+.slider .indicators .indicator-item {
+    background-color: transparentize($white, .5);
+
+    &.active {
+        background-color: $white;
+    }
+}

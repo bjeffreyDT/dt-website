@@ -1,0 +1,54 @@
+<div class="container intro">
+    <div class="row" style="margin-top:15px !important;">
+        <div class="col">
+            <div style="width: 100px; float: left; margin-right: 40px;">
+                <img src="/assets/images/logos/dt_logo_only.svg">
+            </div>
+            <p class="flow-text intro-text" style="margin-top:0px !important;">We are a creative group of behavioral health experts.<br />
+                We believe that <span class="highlight">tech</span> and <span class="highlight">ethical business sense</span> can and will profoundly improve the quality of care provided to individuals who receive it.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="curves" class="hero"></div>
+<div class="container">
+
+    <section class="services">
+        <div class="row">
+            <div class="col s8 l8">
+                <h2>Our product</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2 l6 margin-on-medium-and-down">
+                    <a href="https://www.supportableapp.com/" style="cursor: pointer;" target="_blank">
+                        <lottie-player src="https://lottie.host/a2ccb48f-e699-4159-8339-d9227532cb90/c5khYN2JK5.json" background="transparent" speed="1" style="width: 300px; height: 75px" direction="1" mode="normal" hover></lottie-player>
+                    </a>
+            </div>
+    </section>
+
+    <section class="get-in-touch">
+        <div class="row">
+            <div class="col s12">
+                <h2>Get in touch</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l6">
+                <p class="flow-text">Whether you like to start a new project, discuss a brilliant investment idea or just have a small-talk chat, feel free to
+                    <a href="#/contact" class="ajax-link">contact us</a>.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $.getScript('./assets/js/curves.js?v=1')
+        .done(function(script, status) {
+            //console.log(status);
+        })
+        .fail(function(error) {
+            //console.error(error);
+            Materialize.toast('Curves script error: ' + error.statusText, App.CONFIG.toastSpeed, 'error');
+        });
+</script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

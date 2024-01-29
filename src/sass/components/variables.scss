@@ -1,0 +1,41 @@
+// Media query ranges
+$small-screen-up: 601px;
+$medium-screen-up: 993px;
+$large-screen-up: 1201px;
+$small-screen: 600px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})";
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})";
+$small-and-down: "only screen and (max-width : #{$small-screen})";
+$medium-and-down: "only screen and (max-width : #{$medium-screen})";
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})";
+
+// Global
+$container-width: 80%;
+
+// Colors
+$white: #fff;
+
+// Work single pages colors
+$blue-ice-cream-color: #2dc3e9;
+$green-lamp-color: #25e47a;
+$purple-clocks-color: #a0f;
+$red-clock-color: #db3838;
+$yellow-dude-color: #fee94e;
+$light-grey-ice-cream-color: #e8e8e8;
+
+// Blog posts pages colors
+$blueish-bike: #7b9a9c;
+$blueish-sky: #335b87;
+$brownish-ny: #dbc88f;
+
+// Used for toasts
+$error: color('red', 'accent-2');
+$success: color('green', 'accent-3');
+
+// 404 game colors
+$black-space-background-color: #141414;
+$black-hit-background0color: #341414;
+$red-hit-shadow-color: rgba(255, 0, 0, 0.6);

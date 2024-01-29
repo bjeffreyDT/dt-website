@@ -1,0 +1,21 @@
+address {
+    font-style: normal;
+}
+
+footer {
+    padding: 2rem 0 4rem;
+
+    @media #{$medium-and-down} {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    @media #{$small-and-down} {
+        padding-bottom: 1rem;
+    }
+
+    .new-window {
+        @include transform(rotate(-45deg));
+        display: inline-block;
+    }
+}

@@ -1,0 +1,229 @@
+.page-404 {
+    @include page-colors($white, color('shades', 'black'));
+
+    footer {
+        display: none;
+    }
+
+    .intro {
+        @include user-select(none);
+        cursor: none;
+    }
+
+    .game-info {
+        @media #{$medium-and-down} {
+            display: none;
+        }
+    }
+
+    #space {
+        @media #{$medium-and-down} {
+            display: none;
+        }
+
+        @include transform(translate3d(0, 0, 0));
+        @include transition(all .1s);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: $black-space-background-color;
+
+        &.started {
+            @include user-select(none);
+            cursor: none;
+
+            #start {
+                display: none;
+            }
+
+            #spaceship {
+                display: block;
+            }
+        }
+
+        &.hit {
+            background: $black-hit-background0color;
+            box-shadow: inset 0 0 50px $red-hit-shadow-color;
+        }
+    }
+
+    h1 {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        margin: 0;
+        font-size: 48px;
+        line-height: 1;
+        color: color('green', 'accent-3');
+
+        &#livesCount {
+            right: 2%;
+            left: auto;
+            color: color('red', 'accent-3');
+        }
+    }
+
+    #start {
+        @media #{$medium-and-down} {
+            display: none;
+        }
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        margin-top: -60px;
+        margin-left: -25%;
+        font-size: 60px;
+        line-height: 120px;
+        color: color('shades', 'white');
+        text-align: center;
+        cursor: pointer;
+        background: color('red', 'accent-3');
+
+        &:hover {
+            background: color('red', 'accent-4');
+        }
+    }
+
+    #spaceship {
+        @include transform(translate3d(0, 0, 0));
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        z-index: 1;
+        display: none;
+        width: 50px;
+        height: 50px;
+        background: #ff0000;
+        border-right: 10px solid #cc0000;
+
+        &:before,
+        &:after {
+            @extend %triangle;
+            left: 0;
+        }
+
+        &:before {
+            top: -25px;
+            border-bottom: 25px solid #cc0000;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+
+        &:after {
+            top: -20px;
+            border-bottom: 20px solid #ff0000;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+        }
+
+        .wing {
+            position: relative;
+            top: 40px;
+            left: -10px;
+            float: left;
+            width: 10px;
+            height: 20px;
+            background: #ff0000;
+
+            + .wing {
+                left: 20px;
+                float: right;
+                background: #cc0000;
+            }
+        }
+
+        .flames {
+            position: absolute;
+            bottom: 0;
+            left:0;
+
+            &:before,
+            &:after {
+                @extend %triangle;
+                border-top: 25px solid rgba(255, 135, 40, 0.7);
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+            }
+
+            &:before {
+                left: 10px;
+            }
+
+            &:after {
+                left: 20px;
+            }
+
+            &.burn {
+                &:before,
+                &:after {
+                    border-top: 28px solid rgba(255, 100, 0, 0.7);
+                }
+            }
+        }
+    }
+
+    .lazer {
+        @include transition(bottom .666s linear);
+        position: absolute;
+        bottom: 51px;
+        width: 8px;
+        height: 8px;
+        background: color('light-green', 'accent-3');
+
+        &.shot {
+            bottom: 100%;
+        }
+    }
+
+    .enemy {
+        @include transition(top 4s linear);
+        @include transform(translate3d(0, 0, 0));
+        position: absolute;
+        top: -50px;
+        width: 50px;
+        height: 50px;
+        background: color('yellow', 'base');
+
+        &.moving {
+            top: 100%;
+        }
+
+        &.exploding {
+            @include transition(all .1s linear);
+            background: red;
+            width: 60px;
+            height: 60px;
+            margin-left: -5px;
+            margin-top: -5px;
+        }
+    }
+
+    .star {
+        @include transition(transform 2s linear);
+        position: absolute;
+        top: 0;
+        width: 4px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.3);
+
+        &.fast {
+            @include transition(transform 2.5s linear);
+        }
+
+        &.shooting {
+            @include transform(translate3d(0, 1200px, 0));
+        }
+    }
+
+    %triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        content: '';
+    }
+}

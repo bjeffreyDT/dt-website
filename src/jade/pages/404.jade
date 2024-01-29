@@ -1,0 +1,38 @@
+.container.intro
+    .row.flow-text
+        .col.s12.l6
+            p.intro-text 404
+        .col.s12.l6
+            p.intro-text
+                | Page not found :-(&nbsp;
+                span.game-info
+                    | But you can play this space shooter game instead! Move around with your mouse and
+                    | click to shoot.
+
+#space
+    h1#livesCount 5
+    h1#killCount 0
+    #start START
+    #spaceship
+        .wing
+        .wing
+        .flames
+
+script.
+    $.getScript('./assets/js/spaceship-shooter.js')
+        .done(function (script, status) {
+            console.log(status);
+        })
+        .fail(function (error) {
+            console.error(error);
+            Materialize.toast('Curves script error: ' + error.statusText, App.CONFIG.toastSpeed, 'error');
+        });
+
+script#lazer-tpl(type='template/html').
+    <div class="lazer"></div>
+
+script#star-tpl(type='template/html').
+    <div class="star"></div>
+
+script#enemy-tpl(type='template/html').
+    <div class="enemy"></div>

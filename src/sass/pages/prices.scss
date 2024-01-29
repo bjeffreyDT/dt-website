@@ -1,0 +1,39 @@
+.page-openings {
+    @include page-colors($white, color('deep-purple', 'accent-3'));
+
+    .info {
+        position: absolute;
+        display: inline-block;
+        padding: 0 1rem;
+        cursor: help;
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .collapsible {
+        box-shadow: none;
+    }
+
+    .collapsible-header {
+        background: transparent;
+    }
+
+    section:not(:first-of-type) {
+        border-top-color: transparentize($white, .8);
+    }
+
+    .openings {
+        @media #{$small-and-down} {
+            text-align: center;
+        }
+    }
+
+    .price-box {
+        @media #{$small-and-down} {
+            margin-bottom: 3rem;
+        }
+    }
+}

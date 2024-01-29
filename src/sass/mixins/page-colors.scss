@@ -1,0 +1,35 @@
+@mixin page-colors ($color, $background-color) {
+    color: $color;
+    background: $background-color;
+
+    %a {
+        color: $color;
+        border-bottom: 1px solid transparentize($color, .75);
+
+        &:hover {
+            border-bottom-color: transparentize($color, .5);
+        }
+    }
+
+    a {
+        @extend %a;
+    }
+
+    .navbar-fixed nav {
+        ul:not(.side-nav) a {
+            @extend %a;
+        }
+        a {
+            @extend %a;
+        }
+    }
+
+    .pace-progress {
+        background: $color;
+    }
+
+    .pace-activity {
+        border-top-color: $color;
+        border-left-color: $color;
+    }
+}

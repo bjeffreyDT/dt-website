@@ -1,0 +1,14 @@
+@mixin single-page-colors($color, $background-color) {
+    @include page-colors($color, $background-color);
+
+    .content-wrapper,
+    footer {
+        background: $background-color;
+    }
+
+    @media #{$medium-and-down} {
+        .meta .row {
+            border-bottom: 1px solid $color;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.page-journal {
+    @include page-colors(color('brown', 'darken-4'), color('yellow', 'lighten-5'));
+
+    .no-underline:hover ~ a {
+        border-bottom-color: transparentize(color('grey', 'darken-3'), .5);
+    }
+}

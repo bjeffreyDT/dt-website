@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 l6 offset-l6">
+            <p class="flow-text intro-text">Feel free to contact us whether you like to start a new project, discuss a brilliant investment idea or just have a small-talk chat.
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <form id="mail-form" action="mailer/mailer.php" novalidate="novalidate" autocomplete="off">
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="input-field">
+                        <input id="name" type="text" name="name" />
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <div class="input-field">
+                        <input id="email" type="email" name="email" />
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <button id="send-message" type="submit" class="btn btn-large btn-flat waves-effect waves-dark white purple-text accent-4">Send</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+<script>
+    App.contactForm();
+</script>

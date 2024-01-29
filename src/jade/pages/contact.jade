@@ -1,0 +1,29 @@
+.container
+    .row
+        .col.s12.l6.offset-l6
+            p.flow-text.intro-text.
+                Feel free to contact us whether you like to start a new project, discuss a brilliant
+                investment idea or just have a small-talk chat.
+
+    section
+        form#mail-form(action='mailer/mailer.php', novalidate, autocomplete='off')
+            .row
+                .col.s12.l6
+                    .input-field
+                        input#name(type='text', name='name')
+                        label(for='name') Name
+                .col.s12.l6
+                    .input-field
+                        input#email(type='email', name='email')
+                        label(for='email') Email
+            .row
+                .col.s12
+                    .input-field
+                        textarea#message.materialize-textarea(name='message')
+                        label(for='message') Message
+            .row
+                .col.s12
+                    button#send-message.btn.btn-large.btn-flat.waves-effect.waves-dark.white.purple-text.accent-4(type='submit') Send
+
+script.
+    App.contactForm();

@@ -1,0 +1,68 @@
+.page-values {
+    @include page-colors(color('indigo', 'darken-4'), color('teal', 'accent-2'));
+
+    .social {
+        margin-top: 0;
+    }
+
+    .team {
+        @media #{$small-and-down} {
+            text-align: center;
+        }
+    }
+
+    .philosophy {
+        padding: 5rem 0 4rem;
+
+        @media #{$small-and-down} {
+            padding: 2rem 0 1rem;
+        }
+
+        .tabs {
+            height: auto;
+            background-color: transparent;
+
+            .tab {
+                height: auto;
+                letter-spacing: normal;
+                color: color('indigo', 'darken-4');
+                text-transform: none;
+
+                h5 {
+                    @media #{$small-and-down} {
+                        display: none;
+                    }
+                }
+
+                .philosophy-number {
+                    @media #{$large-and-up} {
+                        display: none;
+                    }
+                }
+
+                a {
+                    color: transparentize(color('indigo', 'darken-4'), .4);
+
+                    &.active {
+                        color: color('indigo', 'darken-4');
+                    }
+                }
+            }
+        }
+
+        .tab-contents {
+            h5 {
+                display: none;
+
+                @media #{$small-and-down} {
+                    display: block;
+                }
+            }
+        }
+
+        .indicator {
+            height: 3px;
+            background-color: color('indigo', 'darken-4');
+        }
+    }
+}

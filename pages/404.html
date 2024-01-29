@@ -1,0 +1,40 @@
+<div class="container intro">
+    <div class="row flow-text">
+        <div class="col s12 l6">
+            <p class="intro-text">404</p>
+        </div>
+        <div class="col s12 l6">
+            <p class="intro-text">Page not found :-(&nbsp;<span class="game-info">But you can play this space shooter game instead! Move around with your mouse and
+click to shoot.</span></p>
+        </div>
+    </div>
+</div>
+<div id="space">
+    <h1 id="livesCount">5</h1>
+    <h1 id="killCount">0</h1>
+    <div id="start">START</div>
+    <div id="spaceship">
+        <div class="wing"></div>
+        <div class="wing"></div>
+        <div class="flames"></div>
+    </div>
+</div>
+<script>
+    $.getScript('./assets/js/spaceship-shooter.js')
+        .done(function(script, status) {
+            console.log(status);
+        })
+        .fail(function(error) {
+            console.error(error);
+            Materialize.toast('Curves script error: ' + error.statusText, App.CONFIG.toastSpeed, 'error');
+        });
+</script>
+<script id="lazer-tpl" type="template/html">
+    <div class="lazer"></div>
+</script>
+<script id="star-tpl" type="template/html">
+    <div class="star"></div>
+</script>
+<script id="enemy-tpl" type="template/html">
+    <div class="enemy"></div>
+</script>

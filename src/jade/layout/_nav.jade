@@ -1,0 +1,23 @@
+.navbar-fixed
+    nav
+        .nav-wrapper
+            .container
+                .row
+                    .col.s12.l6
+                        a.ajax-link(href='#/') Oona
+                        span.right.show-on-medium-and-down.hide-on-large-only
+                            a#sidenav-toggle.sidenav-toggle(href='#', data-activates='slide-out') Menu
+                    .col.s12.l6
+                        ul.hidden.hide-on-med-and-down
+                            li: a.ajax-link(href='#/work') Work
+                            li: a.ajax-link(href='#/openings') openings
+                            li: a.ajax-link(href='#/values') values
+                            li: a.ajax-link(href='#/journal') Journal
+                            li: a.ajax-link(href='#/contact') Contact
+
+                        ul#slide-out.side-nav
+                            li: a.ajax-link(href='#/work') Work
+                            li: a.ajax-link(href='#/openings') openings
+                            li: a.ajax-link(href='#/values') values
+                            li: a.ajax-link(href='#/journal') Journal
+                            li: a.ajax-link(href='#/contact') Contact

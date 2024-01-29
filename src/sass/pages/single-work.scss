@@ -1,0 +1,75 @@
+// Global single work classes
+[class*='page-work-'] {
+    .hero-wrapper,
+    .hero {
+        height: 75vh;
+    }
+
+    .hero {
+        position: fixed;
+        width: 100%;
+        margin-top: 64px;
+        background-position: center;
+        background-size: cover;
+
+        @media #{$small-and-down} {
+            margin-top: 56px;
+        }
+    }
+
+    .margin-1em {
+        margin-top: 1em;
+    }
+
+    section:not(:first-of-type) {
+        border-top-color: transparentize($white, .8);
+    }
+
+    section:first-of-type {
+        padding-top: 0;
+    }
+
+    @media #{$medium-and-down} {
+        .meta {
+            .row {
+                padding-bottom: 1.5rem;
+            }
+
+            .col:first-of-type {
+                opacity: .75;
+            }
+        }
+    }
+}
+
+.page-work-ice-cream {
+    @include single-page-colors($white, $blue-ice-cream-color);
+}
+
+.page-work-the-lamp {
+    @include single-page-colors($white, $green-lamp-color);
+}
+
+.page-work-the-clocks {
+    @include single-page-colors($white, $purple-clocks-color);
+}
+
+.page-work-wooden-series-2 {
+    @include single-page-colors($white, $red-clock-color);
+}
+
+.page-work-wooden-series-1 {
+    @include single-page-colors(color('grey', 'darken-4'), $yellow-dude-color);
+
+    section:not(:first-of-type) {
+        border-top-color: transparentize(color('grey', 'darken-4'), .8);
+    }
+}
+
+.page-work-ice-cream-concept {
+    @include single-page-colors(color('grey', 'darken-4'), $light-grey-ice-cream-color);
+
+    section:not(:first-of-type) {
+        border-top-color: transparentize(color('grey', 'darken-4'), .8);
+    }
+}

@@ -1,0 +1,91 @@
+.container.intro
+    .row
+        .col.s12.l6.offset-l6
+            p.flow-text.intro-text.
+                Oona is a cutting edge design and development studio that exists to create
+                challenging and engaging visual concepts.
+
+.hero#curves
+
+.container
+    section.latest-projects
+        .row
+            .col.s12
+                h2 Latest projects
+        .row
+            .col.s12.l6.margin-on-medium-and-down
+                a.no-underline(href='#/work/the-lamp')
+                    img.responsive-img(src='./assets/images/work/lamp.png', alt='The Lamp')
+                a.flow-text(href='#/work/the-lamp') The Lamp
+            .col.s12.l6
+                a.no-underline(href='#/work/the-clocks')
+                    img.responsive-img(src='./assets/images/work/clocks.png', alt='The Clocks')
+                a.flow-text(href='#/work/the-clocks') The Clocks
+
+    section.services
+        .row
+            .col.s12
+                h2 Our services
+        .row
+            .col.s12.l6.margin-on-medium-and-down
+                i.icon-basic-cloud
+                span.flow-text Cloud solutions
+            .col.s12.l6
+                i.icon-basic-accelerator
+                span.flow-text Performance optimizations
+        .row
+            .col.s12.l6.margin-on-medium-and-down
+                i.icon-basic-target
+                span.flow-text Targeted clients
+            .col.s12.l6
+                i.icon-ecommerce-graph-increase
+                span.flow-text Sales analysis
+        .row
+            .col.s12.l6.margin-on-medium-and-down
+                i.icon-basic-battery-charge
+                span.flow-text Sustainable energy
+            .col.s12.l6
+                i.icon-basic-heart
+                span.flow-text A lot of passion
+
+    section.blog-posts
+        .row
+            .col.s12
+                h2 Journal entries
+        .row
+            .col.s12.l6.margin-on-medium-and-down
+                a.no-underline(href='#/blog/new-bike')
+                    img.responsive-img(src='./assets/images/blog/bicycle.jpg', alt='New Bike')
+                .meta
+                    time(datetime='2016-08-08T21:00') 08/08/2016
+                    span &nbsp;by Pete
+                a.flow-text(href='#/blog/new-bike') Pete’s new bike
+            .col.s12.l6
+                a.no-underline(href='#/blog/the-mountain')
+                    img.responsive-img(src='./assets/images/blog/mountain.jpg', alt='The Mountain')
+                .meta
+                    time(datetime='2016-08-01T21:00') 01/08/2016
+                    span &nbsp;by Annie
+                a.flow-text(href='#/blog/the-mountain') The Mountain
+
+    section.get-in-touch
+        .row
+            .col.s12
+                h2 Get in touch
+        .row
+            .col.s12.l6
+                p.flow-text
+                    | Whether you like to start a new project, discuss a brilliant investment idea or just have a
+                    | small-talk chat, feel free to
+                    a.ajax-link(href='#/contact') contact us
+                    |.
+
+script.
+    $.getScript('./assets/js/curves.js?v=1')
+        .done(function (script, status) {
+            //console.log(status);
+        })
+        .fail(function (error) {
+            //console.error(error);
+            Materialize.toast('Curves script error: ' + error.statusText, App.CONFIG.toastSpeed, 'error');
+        });
